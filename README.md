@@ -11,7 +11,7 @@ MVC architecture breaks down a large application into three distinct components:
 ### model
 
 - in `/api/model`
-- data transformation, common getters/setters, methods
+- data transformation, common business logic getters/setters, methods
 - using `class-transformer` library to transform payload into classes
 
 ### view
@@ -22,6 +22,7 @@ MVC architecture breaks down a large application into three distinct components:
 ### controller
 
 - in .ts, class vue components with decorators from `vue-facing-decorator`
+- business logic for UI
 
 ### API
 
@@ -31,13 +32,19 @@ MVC architecture breaks down a large application into three distinct components:
 
 in this repo you will find also `.tsx` example, this has few issue that I encountered:
 
-- no vue decorators (`v-bind`, `v-for`).. everything must be done react style ( example: `v-for` => `list.map(() => ...)` )
-- no vue modifiers, higher order functions needs to be used ( example: `@keyup.submit` equivalent to that is `onKeyup={withModifiers(this.onSearch, ['submit'])}` )
+- no vue decorators (`v-bind`, `v-for`).. everything must be done react style example:
+
+  `v-for` => `list.map(() => ...)`
+
+- no vue modifiers, higher order functions needs to be used example:
+
+  `@keyup.submit` equivalent to that is `onKeyup={withModifiers(this.onSearch, ['submit'])}`
+
 - css is not scoped need to use third party solution to prevent css conflicts
 
 maybe for this case (`.tsx`) is better to use `react` instead
 
-you can check 'pokemon-search' directory
+you can check `pokemon-search` directory
 
 ## Project Setup
 
