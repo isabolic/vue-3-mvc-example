@@ -32,7 +32,7 @@ MVC architecture breaks down a large application into three distinct components:
 
 in this repo you will find also `.tsx` example, this has few issue that I encountered:
 
-- no vue decorators (`v-bind`, `v-for`).. everything must be done react style example:
+- no vue directives (`v-bind`, `v-for`).. everything must be done react style example:
 
   `v-for` => `list.map(() => ...)`
 
