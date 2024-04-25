@@ -6,5 +6,7 @@ export const searchInput = style({
   fontSize: '16px',
   border: '1px solid #ccc',
   borderRadius: '5px',
-  marginBottom: '10px'
+  marginBottom: '10px',
+  display: 'flex',
+  flexDirection: 'column'
 })
