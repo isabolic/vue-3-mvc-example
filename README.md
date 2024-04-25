@@ -40,9 +40,9 @@ in this repo you will find also `.tsx` example, this has few issue that I encoun
 
   `@keyup.submit` equivalent to that is `onKeyup={withModifiers(this.onSearch, ['submit'])}`
 
-- css is not scoped need to use third party solution to prevent css conflicts
+- css is not scoped, need to use third party solution to prevent css conflicts
 
-maybe for this case (`.tsx`) is better to use `react` instead
+SIDENOTE: maybe for this case (`.tsx`) is better to use `react` instead
 
 you can check `pokemon-search` directory
 
