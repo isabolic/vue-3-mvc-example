@@ -6,12 +6,12 @@ export class AbilityEntry {
   @Expose()
   @Type(() => Ability)
   @IsObject()
-  public ability?: Ability = undefined
+  public ability: Ability = new Ability()
 
-  @Expose()
+  @Expose({ name: 'is_hidden' })
   @IsOptional()
   @IsBoolean()
-  public is_hidden?: boolean = undefined
+  public isHidden?: boolean = undefined
 
   @Expose()
   @IsOptional()
