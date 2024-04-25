@@ -10,6 +10,7 @@
     "experimentalDecorators": true,
     "outDir": "./dist",
     "skipLibCheck": true,
+    "noEmit": false,
     "composite": true,
     "moduleResolution": "bundler",
     "jsx": "preserve",
