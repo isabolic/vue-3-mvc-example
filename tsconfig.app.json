@@ -2,7 +2,6 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.tsx", "src/**/*.vue", "src/**/*.ts"],
   "exclude": ["src/**/__tests__/*"],
-  "files": ["shims-vue.d.ts"],
   "compilerOptions": {
     "declaration": true,
     "typeRoots": ["./node_modules/@types/", "./types", "./node_modules"],
@@ -16,7 +15,6 @@
     "jsx": "preserve",
     "jsxImportSource": "vue",
     "module": "ESNext",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
